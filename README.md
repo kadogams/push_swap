@@ -29,6 +29,12 @@ __rra__ : reverse rotate a - shift down all elements of stack a by 1. The last e
 __rrb__ : reverse rotate b - shift down all elements of stack b by 1. The last element becomes the first one.  
 __rrr__ : rra and rrb at the same time.
 
+## Installation
+
+```bash
+git clone --recurse-submodules https://github.com/kadogams/push_swap.git; cd push_swap; make
+```
+
 ## Usage
 
 You may compile the binaries by running ```make```.
