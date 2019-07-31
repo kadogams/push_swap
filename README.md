@@ -42,11 +42,17 @@ You may compile the binaries by running ```make```.
 ### checker
 
 ```bash
-./push_swap [-v] integer list
+./checker [-v] integer list
 ```
 
 ### push_swap
 
 ```bash
 ./push_swap integer list
+```
+
+### combined with a random number generator
+
+```bash
+ARG=`ruby -e "puts (1..50).to_a.shuffle.join(' ')"``; ./push_swap $ARG | ./checker [-v] $ARG
 ```
